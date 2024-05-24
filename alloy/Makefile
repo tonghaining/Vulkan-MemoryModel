@@ -11,7 +11,17 @@
 
 default: runtests
 
-litmustests = $(addsuffix .gen, $(notdir $(sort $(wildcard tests/*.test))))
+# Directory containing test files
+TEST_DIR ?= tests
+# Single test file (optional)
+TEST_FILE ?=
+
+# Generate list of test files to process
+ifneq ($(TEST_FILE),)
+    litmustests = $(notdir $(TEST_FILE)).gen
+else
+    litmustests = $(addsuffix .gen, $(notdir $(sort $(wildcard $(TEST_DIR)/*.test))))
+endif
 
 build/litmus.exe : litmus.cpp
 	@mkdir -p build
@@ -51,9 +61,16 @@ endif
 
 # Generate the temp files in ./build, run Alloy from the command line, and
 # diff the generated output against the .ref file (generated from the tests)
-%.test.gen : tests/%.test build/litmus.exe pre
+%.test.gen : $(TEST_DIR)/%.test build/litmus.exe pre
 	$(eval test = $(notdir $<))
 	@echo $(test)
-	@./build/litmus.exe $(test) tests build
+	@./build/litmus.exe $(test) $(TEST_DIR) build
+	@java -cp "org.alloytools.alloy.dist-5.0.0-20190619.101010-34.jar$(JAVACPSEPARATOR)." RunCommandLine build/$(test).gen > build/$(test).out
+	@diff --strip-trailing-cr build/$(test).ref build/$(test).out || echo "Test $@ failed"
+
+%.test.gen : $(TEST_FILE) build/litmus.exe pre
+	$(eval test = $(notdir $<))
+	@echo $(test)
+	@./build/litmus.exe $(test) $(dir $(TEST_FILE)) build
 	@java -cp "org.alloytools.alloy.dist-5.0.0-20190619.101010-34.jar$(JAVACPSEPARATOR)." RunCommandLine build/$(test).gen > build/$(test).out
 	@diff --strip-trailing-cr build/$(test).ref build/$(test).out || echo "Test $@ failed"
