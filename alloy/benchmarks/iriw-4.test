@@ -1,16 +1,19 @@
 NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x0 = 1
+st.atom.rel.scopedev.sc0.semsc0 x0 = 1
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x1 = 1
+st.atom.rel.scopedev.sc0.semsc0 x1 = 1
+NEWWG
 NEWSG
 NEWTHREAD
-ld.atom.acq.scopewg.sc0.semsc0 x0 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x1 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-ld.atom.acq.scopewg.sc0.semsc0 x0 = 0
-ld.atom.acq.scopewg.sc0.semsc0 x1 = 1
-SATISFIABLE consistent[X] && #dr=0
+ld.atom.acq.scopedev.sc0.semsc0 x1 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
+SATISFIABLE consistent[X]

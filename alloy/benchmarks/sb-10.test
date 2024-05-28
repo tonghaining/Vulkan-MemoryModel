@@ -1,42 +1,51 @@
 NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x0 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x1 = 0
+st.atom.rel.scopedev.sc0.semsc0 x0 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x1 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x2 = 0
+st.atom.rel.scopedev.sc0.semsc0 x1 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x2 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x3 = 0
+st.atom.rel.scopedev.sc0.semsc0 x2 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x3 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x4 = 0
+st.atom.rel.scopedev.sc0.semsc0 x3 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x4 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x5 = 0
+st.atom.rel.scopedev.sc0.semsc0 x4 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x5 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x6 = 0
+st.atom.rel.scopedev.sc0.semsc0 x5 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x6 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x6 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x7 = 0
+st.atom.rel.scopedev.sc0.semsc0 x6 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x7 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x7 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x8 = 0
+st.atom.rel.scopedev.sc0.semsc0 x7 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x8 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x8 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x9 = 0
+st.atom.rel.scopedev.sc0.semsc0 x8 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x9 = 0
+NEWWG
 NEWSG
 NEWTHREAD
-st.atom.rel.scopewg.sc0.semsc0 x9 = 1
-ld.atom.acq.scopewg.sc0.semsc0 x0 = 0
-SATISFIABLE consistent[X] && #dr=0
+st.atom.rel.scopedev.sc0.semsc0 x9 = 1
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
+SATISFIABLE consistent[X]
