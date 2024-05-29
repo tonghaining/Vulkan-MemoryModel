@@ -13,4 +13,5 @@ NEWSG
 NEWTHREAD
 st.atom.rel.scopedev.sc0.semsc0 x2 = 1
 ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
+
 SATISFIABLE consistent[X]

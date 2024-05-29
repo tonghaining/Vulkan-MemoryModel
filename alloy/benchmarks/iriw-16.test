@@ -56,8 +56,8 @@ NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
@@ -67,9 +67,9 @@ NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x6 = 0
@@ -78,10 +78,10 @@ NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x6 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x7 = 0
@@ -89,33 +89,34 @@ NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x6 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x7 = 0
 NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x6 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x7 = 0
 NEWWG
 NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x7 = 1
-ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x1 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x2 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x3 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x4 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x5 = 0
 ld.atom.acq.scopedev.sc0.semsc0 x6 = 0
+ld.atom.acq.scopedev.sc0.semsc0 x0 = 0
+
 SATISFIABLE consistent[X]

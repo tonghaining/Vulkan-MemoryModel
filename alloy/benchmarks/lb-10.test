@@ -48,4 +48,5 @@ NEWSG
 NEWTHREAD
 ld.atom.acq.scopedev.sc0.semsc0 x0 = 1
 st.atom.rel.scopedev.sc0.semsc0 x9 = 1
+
 NOSOLUTION consistent[X]
