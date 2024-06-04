@@ -1,0 +1,15 @@
+// An atomic load instruction reads before a value stored
+// by the store instruction the other thread.
+// Forbidden
+
+NEWWG
+NEWSG
+NEWTHREAD
+st.atom.scopedev.sc0 x = 1
+cbar.acq.rel.scopedev.semsc0 0
+ld.atom.scopedev.sc0 x
+NEWSG
+NEWTHREAD
+cbar.acq.rel.scopedev.semsc0 0
+ld.atom.scopedev.sc0 x = 0
+NOSOLUTION consistent[X]

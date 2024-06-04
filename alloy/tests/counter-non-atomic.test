@@ -1,0 +1,16 @@
+// Both read-modify-write instructions read a value
+// stored by a non-atomic write instruction preceding the barrier.
+// Allowed (inconsistent)
+
+NEWWG
+NEWSG
+NEWTHREAD
+st.av.scopedev.sc0 x = 1
+cbar.acq.rel.scopedev.semsc0 0
+rmw.atom.acq.rel.scopedev.sc0.semsc0 x = 1 2
+NEWSG
+NEWTHREAD
+cbar.acq.rel.scopedev.semsc0 0
+rmw.atom.acq.rel.scopedev.sc0.semsc0 x = 1 2
+SATISFIABLE consistent[X] && #dr=0
+NOSOLUTION consistent[X] && #dr>0
